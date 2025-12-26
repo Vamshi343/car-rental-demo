@@ -63,7 +63,7 @@ export default function App() {
   const handleProceedToPayment = async (amount) => {
     try {
       const { data: order } = await axios.post(
-        'http://localhost:5000/create-order',
+        'https://car-rental-demo-server.onrender.com/create-order',
         { amount }
       );
 
